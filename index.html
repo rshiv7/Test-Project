@@ -30,13 +30,10 @@
             window.fbAsyncInit = function () {
                 FB.init({
                     appId: '378290079456982',
-                    cookie: true,
                     xfbml: true,
                     version: 'v3.3'
                 });
-
                 FB.AppEvents.logPageView();
-
             };
 
             (function (d, s, id) {
@@ -46,10 +43,10 @@
                 js.src = "https://connect.facebook.net/en_US/sdk.js";
                 fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));
-
-        
         </script>
-        
+        <div class="fb-like" data-share="true" data-width="450" data-show-faces="true">
+        </div>
+
         <div id="fb-root"></div>
         <script async defer crossorigin="anonymous"
             src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3&appId=378290079456982&autoLogAppEvents=1"></script>
@@ -96,53 +93,53 @@
         </div>
 
         <form>
-            <div class="form-container" >
-            <div class="form-row">
-                <div class="col-md-4 mb-3">
-                    <label for="validationDefault01">First name</label>
-                    <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value=""
-                        required>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <label for="validationDefault02">Last name</label>
-                    <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value=""
-                        required>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <label for="validationDefaultUsername">Username</label>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="inputGroupPrepend2">@</span>
+            <div class="form-container">
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label for="validationDefault01">First name</label>
+                        <input type="text" class="form-control" id="validationDefault01" placeholder="First name"
+                            value="" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="validationDefault02">Last name</label>
+                        <input type="text" class="form-control" id="validationDefault02" placeholder="Last name"
+                            value="" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="validationDefaultUsername">Username</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                            </div>
+                            <input type="text" class="form-control" id="validationDefaultUsername"
+                                placeholder="Username" aria-describedby="inputGroupPrepend2" required>
                         </div>
-                        <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username"
-                            aria-describedby="inputGroupPrepend2" required>
                     </div>
                 </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="validationDefault03">City</label>
+                        <input type="text" class="form-control" id="validationDefault03" placeholder="City" required>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="validationDefault04">State</label>
+                        <input type="text" class="form-control" id="validationDefault04" placeholder="State" required>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="validationDefault05">Zip</label>
+                        <input type="text" class="form-control" id="validationDefault05" placeholder="Zip" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                        <label class="form-check-label" for="invalidCheck2">
+                            Agree to terms and conditions
+                        </label>
+                    </div>
+                </div>
+                <button class="btn btn-primary" type="submit">Sign Up</button>
             </div>
-            <div class="form-row">
-                <div class="col-md-6 mb-3">
-                    <label for="validationDefault03">City</label>
-                    <input type="text" class="form-control" id="validationDefault03" placeholder="City" required>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <label for="validationDefault04">State</label>
-                    <input type="text" class="form-control" id="validationDefault04" placeholder="State" required>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <label for="validationDefault05">Zip</label>
-                    <input type="text" class="form-control" id="validationDefault05" placeholder="Zip" required>
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-                    <label class="form-check-label" for="invalidCheck2">
-                        Agree to terms and conditions
-                    </label>
-                </div>
-            </div>
-            <button class="btn btn-primary" type="submit">Sign Up</button>
-        </div>
         </form>
 
 
